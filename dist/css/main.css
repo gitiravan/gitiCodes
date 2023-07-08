@@ -1,0 +1,28 @@
+body {
+  background-color: #333; }
+
+p {
+  color: red; }
+
+header {
+  background-color: #00ff00; }
+  header p {
+    color: #fff; }
+
+a:hover {
+  color: #0000ff; }
+
+.btn-blue, .btn-green {
+  padding: 10px;
+  font: bold 18px tahoma;
+  color: #333; }
+
+.btn-blue {
+  background-color: #0000ff;
+  color: #fff; }
+
+.btn-green {
+  background-color: #00ff00;
+  color: #fff;
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg); }

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/solid.css"><!--add fonts fontawesome-->
+</head>
+
+<body>
+     <div class="wrapper"> 
+       
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">MyCode</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">Tools and Components</li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#bootstrap"
+                            aria-expanded="false" aria-controls="bootstrap">
+                            <i class="fa-solid fa-sliders ps-2"></i>
+                            بوت استرپ
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                        </a>
+                        <ul id="bootstrap" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="bootstrap-rtl.html" class="sidebar-link" > 
+                                    بوت استرپ rtl
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-breakpoints.html" class="sidebar-link" > 
+                                    بوت استرپ breakpoints
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-container.html" class="sidebar-link" > 
+                                    بوت استرپ container
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-icon.html" class="sidebar-link " >
+                                     بوت استرپ icon
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-grid.html" class="sidebar-link " >
+                                     بوت استرپ grid
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-grid-common.html" class="sidebar-link " >
+                                     بوت استرپ grid پركاربرد
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="cards.html" class="sidebar-link " >
+                                     cards
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="carousel.html" class="sidebar-link " >
+                                     carousel-modal-according
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="header.html" class="sidebar-link " >
+                                    <i class="fa-regular fa-file-lines ps-2"></i>
+                                    هدر
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="tab.html" class="sidebar-link " >
+                                    <i class="fa-regular fa-file-lines ps-2"></i>
+                                    tab
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="flex.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            flex
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="jquery.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            jquery
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="javaScript.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            javaScript
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="fontawsome.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            font-awsome
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="pxtorem.html" class="sidebar-link " > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            تبدیل px به rem
+                        </a>
+                    </li>
+                   
+                   
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            sass
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                            
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="sass.html" class="sidebar-link "> راه اندازي sass</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="sass-codes.html" class="sidebar-link">كدهاي sass</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom ">
+                <button class="btn-sidebar" type="button" data-bs-theme="dark">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+           <div class="container">
+               <table>
+                   <tr>
+                       <td>
+                        <p class="mt-5" style="background-color: #ccc;">متغيرها</p>
+                        <p>
+                            برنامه نويس حرفه اي از var استفاده نميكند و از let يا const استفاده ميكند.
+                            مقدار const در برنامه ثابت است و نميتواند در خطوط بعد تغببر كند.
+                            const بايد بلافاصله در همان خط مقداردهي شود.
+
+                        </p>
+                        <p class="mt-5" style="background-color: #ccc;">آرايه</p>
+                        <pre>
+                            let array = [5,9,10];
+                            array[0] = 5;
+
+                            let array = new array(1,2,3); //constructor
+                        </pre>
+
+                        <p class="mt-5" style="background-color: #ccc;">متدهاي آرايه</p>
+                        <pre>
+                            
+                            array.length;
+                            array.indexOf(2);
+                            array.unshift(200); //set first
+                            array.shift(); //get first
+                            array.push(50); //set last
+                            array.pop();//set last
+
+                            array.splice(2,0,200); 
+                            array.splice(3,3);
+                            array.concat(temp);
+
+                            result = numbers.sort(function(x,y)){
+                                return x-y;
+                            }
+
+                            result = numbers.sort( (x,y)=> x-y )
+
+                            result = numbers.filter( x => x>0 );
+
+                            result = numbers.map( x => '<li>${x}</li>');
+
+                            result = numbers.filter( x => x>0 ).map( x => '<li>${x}</li>');
+
+                        </pre>
+                        <p class="mt-5" style="background-color: #ccc;">object</p>
+                        <pre>
+                            const person = {
+                                name : "nader",
+                                age : "30",
+                                gender : "male",
+                                address : {
+                                    country : "iran",
+                                    city : "tehran"
+                                },
+                                hobbies : ["watching tv" , "coding"]
+                            }
+
+                            console.log(person.name);
+                            console.log(person.address.country);
+                            console.log(person.hobbies[1]);
+                        </pre>
+                        <p>
+                            چند سري تعريف از يك مدل object:
+                        </p>
+                        <pre>
+                            class person{
+
+                               constructor(fName,lName,age){
+                               this.firstName = fName;
+                               this.lastName = lName;
+                               this.age = age;
+                            }
+
+                               sayHello(){
+                                   return `${this.firstName} ${this.lastName}  & im ${this.age}` 
+                               }
+
+                            }
+
+                            let mehdi = new person ("mehi","dd","20");
+                            let ali = new person ("ali","dd","30");
+                            </pre>
+
+                            <p>
+                                وراثت
+                            </p>
+                            <pre>
+                                class Animal{
+                                    constructor(fName,lName){
+                                        this.firstName = fName;
+                                        this.lastName = lName;
+                                    }
+
+                                    eat(){
+                                    console.log(`im ${this.firstName} ${this.lastName} and eating`);
+                                    }
+                                     walk(){
+                                    console.log(${this.firstName} ${this.lastName} and walking);
+                                     }
+
+                                    class Dog extends Animal{
+                                    constructor(fName,lName){
+                                        super(fName,lName);
+                                    }
+                                    }
+
+                                    class Cat extends Animal{
+                                    constructor(fName,lName,age,color){
+                                        super(fName,lName);
+                                        this.Cage = age;
+                                        this.Ccolor = color;
+                                    }
+
+                                    woof(){
+                                        console.log(${this.firstName} ${this.lastName}  ${this.age}  ${this.color} and woofing);
+                                    }
+                                    }
+                                }
+
+                                let myDog = new Dog("tt","gg");
+                                let myCat = new Cat("cat","dd","2","blue")
+                            </pre>
+                            <p class="mt-5" style="background-color: #ccc;">function</p>
+                            <pre>
+                                function sayHello(name,age){
+                                    console.log("hello" + name + age)
+                                }
+                                sayHello ("mehdi","20")
+
+
+
+                                function declaration:
+                                function sum(a,b){
+                                    return a+b;
+                                }
+                        </pre>
+                        <p>
+                            همان لحظه ايجاد نميشود و موقع فراخواني ايجاد ميشود
+                        </p>
+                        <pre>
+                            function expression:
+                            let result = function(a,b){
+                                return a+b;
+                            }
+                        </pre>
+                        <p>بلافاصله ايجاد ميشود</p>
+                        <p>
+                            hoisting:
+                            يعني يك فانكشن را اول صدا بزنيم و بعد تعريف كنيم كه فقط در مدل declaration جواب ميدهد.
+                        </p>
+                        <pre>
+                            rest:
+                            function sum(..result){
+                                let sum = 0;
+                                for(let i of result){
+                                    sum += i;
+                                }
+                                retutn sum;
+                            }
+                            console.log(1,2,3,4,5,6);
+                        </pre>
+                        <p class="mt-5" style="background-color: #ccc;">تعريف متغير وسط string</p>
+                        <pre>
+                            "hello my name is" + name;
+                            `hello my name is ${name}`;
+                        </pre>
+                        <p class="mt-5" style="background-color: #ccc;">متدهاي string</p>
+                        <p>
+                            برخي property هستند كه جلوشون () ندارند اما فانكشنها دارند.
+                        </p>
+                        <pre>
+                            let fname = "my name is elahe";
+                            result = fname.length;
+                            result = fname.toLowerCase();
+                            result = fname.toUpperCase();
+                            result = fname.indexOf('h');
+                            result = fname.split(" ");
+                            result = fname.replace("ela","min");
+                            result = fname.includes("ela");
+                        </pre>
+                        <p class="mt-5" style="background-color: #ccc;">حلقه ها</p>
+                        <pre>
+                            while (i<5)
+                            for( let i=0 ; i<50 , i++)
+                        </pre>
+                        <p class="mt-5" style="background-color: #ccc;">دسترسي به المانهاي آرايه و object</p>
+                        <pre>
+                            for (let person in persons)
+                        </pre>
+                        <p class="mt-5" style="background-color: #ccc;">DOM</p>
+                      <pre>
+                          const list = document.querSelector('ul');
+                          const list = document.querSelectorAll('li');
+                          const list = test.children;
+                          const list = document.children[1];
+                          const list = document.children[1].textContent;
+                          const list = document.children[1].innerHtml;
+                          const list = test.firstElementChild;
+                          const list = test.lastElementChild;
+                          const list = test.childElementCount;
+                          const list = test.parentElement;
+
+                          const ttt = document.getElementById('#tt');
+                          const ttt = document.getElementByClassName('.tt');
+                          const ttt = document.querySelectorAll('#book li')[1];
+                          const ttt = document.querySelector('#book li');
+
+                          const ttt = document.createElement('h2');
+                          ttt.className = "mahdi";
+                          ttt.className += "ddd";
+                          ttt.id = "ddd";
+                          ttt.setAttribute('src','...');
+
+                          heading.innerHtml="hello";
+                          heading.innerHtml=`<ul><li>c</li></ul>`;
+                          li.appendChild(document.createTextNode('hello'));
+                          li.remove();
+                          heading.replaceChild(newGeading,oldHeading);
+
+                          textinput.value = ' ';
+                          checkbox.checked = true;
+                          heading.style.display = 'block';
+                          li.innerHTML += spandelet;g
+
+                      </pre>
+                      <p class="mt-5" style="background-color: #ccc;">addEventListener</p>
+                      <pre>
+                          document.querySelector('.button').addEventListener('click',function(){
+
+                          })
+                      </pre>
+                      <p class="mt-5" style="background-color: #ccc;">event هاي ماوس</p>
+                      <pre>
+                          click
+                          dblClick
+                          mouseDown
+                          mouseUp
+                          mouseenter
+                          mouseout
+                          mousemove
+
+                          const heading = document.querySelectorAll('.title')[1];
+                          document.body.addeventlistener('mousemove',function(e){
+                              heading.innerhtml = `mouseX : ${e.offsetx} 
+                                                   mouseY : ${e.offsety}`;
+                              e.preventDefault();
+                          })
+                      </pre>
+                      <p class="mt-5" style="background-color: #ccc;">keyboard هاي ماوس</p>
+                      <pre>
+                           keydown
+                           keyup
+                           focus
+                           blur
+                      </pre>
+                      <p class="mt-5" style="background-color: #ccc;">callback function</p>
+                      <p>
+                          در حالت كلي اگر چند فانكشن زير هم داشته باشيم به ترتيب نگارش اجرا نميشوند و هر كدام كه زودتر اجرا شود خروجي آنرا زودتر مي بينيم.
+                          حالا براي اينكه خروجي اينها را به ترتيب ببينيم بايد تودرتو آنها را صدا بزنيم يعني فانكشن 2 را درون فانكشن 1 صدا بزنيم و فانكشن 3 را درون فانكشن 2 صدا بزنيم. به اين عمل callback function ميگوييم.
+                      </p>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/solid.css">
+    <!--add fonts fontawesome-->
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">MyCode</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">Tools and Components</li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#bootstrap"
+                            aria-expanded="false" aria-controls="bootstrap">
+                            <i class="fa-solid fa-sliders ps-2"></i>
+                            بوت استرپ
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                        </a>
+                        <ul id="bootstrap" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="bootstrap-rtl.html" class="sidebar-link">
+                                    بوت استرپ rtl
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-breakpoints.html" class="sidebar-link">
+                                    بوت استرپ breakpoints
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-container.html" class="sidebar-link">
+                                    بوت استرپ container
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-icon.html" class="sidebar-link ">
+                                    بوت استرپ icon
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-grid.html" class="sidebar-link ">
+                                    بوت استرپ grid
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="bootstrap-grid-common.html" class="sidebar-link ">
+                                    بوت استرپ grid پركاربرد
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="cards.html" class="sidebar-link ">
+                                    cards
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="carousel.html" class="sidebar-link ">
+                                    carousel-modal-according
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="header.html" class="sidebar-link ">
+                                    <i class="fa-regular fa-file-lines ps-2"></i>
+                                    هدر
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="tab.html" class="sidebar-link ">
+                                    <i class="fa-regular fa-file-lines ps-2"></i>
+                                    tab
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="flex.html" class="sidebar-link">
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            flex
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="fontawsome.html" class="sidebar-link">
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            font-awsome
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="pxtorem.html" class="sidebar-link ">
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            تبدیل px به rem
+                        </a>
+                    </li>
+
+
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            sass
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="sass.html" class="sidebar-link "> راه اندازي sass</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="sass-codes.html" class="sidebar-link">كدهاي sass</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class="fa-solid fa-sliders ps-2"></i>
+                            dashboard
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                        </a>
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom ">
+                <button class="btn-sidebar" type="button" data-bs-theme="dark">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <div class="container">
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <p style="background-color: #ccc;">تعريف متغير</p>
+                            primary-color$ <br>
+                            body{color:$primary-color}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="mt-5" style="background-color: #ccc;">
+                                تعريف partial
+                            </p>
+                            <p>
+                                به معني اينست كه متغيرهاي مختلف را داخل فايلهاي مختلف كه با underline شروع ميشود تعريف
+                                ميكنيم و سپس آنها را داخا فايل اصلي سي اس import ميكنيم
+                                <br>
+                                كامپايلر وقتي underline را ميبينيد ديگر آنرا كامپايل نميكند و فقط يكبار در صفحه اصلي سي
+                                اس
+                                اس كه import ميشود آنرا كامپايل ميكند.
+                                <br>
+                                مثال: <br>
+                                نام فايل variables.scss_<br>
+                                داخل main.scss هم داريم:<br>
+
+                            </p>
+                            <p style="direction: ltr;text-align: right;"> @import 'variables';</p>
+                            <p>
+                                ترتيب import كردن مهم است بايد اول variable ها را import كنيم تا در كدهاي بعد بتوانيم آنها را استفاده كنيم.
+                            </p>
+                            <p>
+                                مي توانيم تصاوير و فونتها را در variable_ تعريف كنيم.
+                            </p>
+                            <p>
+                                ميتوانيم در يك partial بنام media.scss_ همه breakpoint ها را تعريف كينم و آخر سر از همه import ميكنيم.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="mt-5" style="background-color: #ccc;">
+                                nesting
+                            </p>
+                            <pre>
+                                <p  >
+                                    مثال اول
+                                </p>
+header{
+    background-color : $dark-color;
+
+    h1{
+        text-align : center;
+    }
+}
+                            </pre>
+                            <pre>
+                                <p class="mt-1" >
+                                    مثال دوم
+                                </p>
+.section{
+    background-color : $dark-color;
+
+    &-a{
+        text-align : center;
+    }
+}
+                            </pre>
+
+                            <pre>
+                                <p class="mt-1" >
+                                    مثال سوم
+                                </p>
+a{
+    color : $dark-color;
+
+    &:hover{
+        text-align : center;
+    }
+}
+                            </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="mt-5" style="background-color: #ccc;">
+                                وراثت
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            فرض كنيد دو تا btn داريم كه يكسري ويژگيهاي مشترك دارند . اين مقادير مشترك را داخل كلاسي مثل btn. و يا btn% قرار ميدهيم
+                            <br>
+                            و بعد كلاسهايي كه از آن منشعب ميشوند را داريم كه ويژگيهاي مشترك %btn را دارند و علاوه بر آن يكسري ويژگي هم مخصوص به خودشان دارند.
+                            <br>
+                            <pre>
+%btn{
+    text-align : center; 
+    color : $dark-color;
+}
+
+%btn{
+    &-light{
+        @extend %btn;
+        background-color : $light-color;
+    }
+
+    &-dark{
+        @extend %btn;
+        background-color : $dark-color;
+    }
+}
+                            </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="mt-5" style="background-color: #ccc;">
+                                function هاي sass
+                            </p>
+                            <p>
+                                sass يكسري فانكشن از پيش تعيين شده دارد كه ميتوانيد به آدرس sass-lang.com رفته و در قسمت documentation در قسمت build-in modules آنها را نگاه كنيد.
+                           <br>
+                           از اين فانكشنها ميتوانيد بصورت كاربردي استفاده كنيد.
+                           
+                           
+                                به عنوان مثال ميخواهيم فانكشني بنويسيم كه اگر بك گراند من تيره بود متن روي آن روشن شود و برعكس 
+                                براي انجام اينكار از تابع lightness استفاده ميكنيم كه يه color ميگيرد و عددي بين 0 تا 100 بعنوان خروجي ميدهد. اعداد زير 50 اعداد تيره و اعداد بالاي 50 روشن هستند.
+                            </p>
+                            <p>
+                                يك فايل جديد بنام _function.scss ميسازيم. توجه كنيد فانكشنها با @ شروع ميشوند و آرگومانها با $ شروع ميشوند<div class=""></div>
+                                 كد زير را در _function.scss مينويسيم و سپس آنرا در main.css import ميكنيم.
+                            </p>
+                            <pre>
+@function set-text-color($color){
+    @if (lightness($color) > 50){
+        @return #000;
+    }else {
+        @return #fff;
+    }
+}
+
+                            </pre>
+                            
+                                حالا جهت فراخواني و استفاده مثلا در هدر سايت مينويسيم:
+                                <pre>
+header {
+    background-color: $dark-color;
+    color : set-text-color($dark-color);
+}
+                            </pre>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="mt-5" style="background-color: #ccc;">
+                                mixin
+                            </p>
+                            <p>
+                                شبيه فانكشن هستند. مثلا در يك دستور تمام prefix هاي transform را تعريف ميكنيد و دفعه هاي بعد ديگر نيازي به نوشتن آنها نيست و فقط استفاده ميكنيم.
+                            </p>
+                            <pre>
+@mixin transform($property){
+    --webkit-transform : $property;
+    --ms-transform : $property;
+    --o-transform : $property;
+    transform : $property;
+}
+                            </pre>
+                            حالا جهت فراخواني مينويسيم
+                        <pre>
+&:hover{
+    @include transform(rotate(-20 deg));
+}
+                        </pre>
+                        <p class="mb-5">
+                            ميتوانيم يك mixin كلي براي انواع فونت بنويسيم كه فقط نام ورودي فونت  را بگيرد و همه دستورات را داشته باشد.
+                        </p>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

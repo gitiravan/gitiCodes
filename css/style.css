@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* , ::after , ::before{
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb.eot');
+    src: url('../fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/IRANSansWeb.ttf') format('truetype');
+    }
+
+body{
+    font-family: Poppins;
+    margin: 0;
+    background-color: #1c1cb8;
+    font-size: 18/16 rem;
+}
+a{
+    cursor: pointer;
+}
+table{direction: rtl;}
+.wrapper{
+display: flex;
+align-items: stretch;
+width: 100%;
+}
+
+#sidebar{
+    max-width:264px ;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49,57,66,0.5);
+    z-index: 1111;
+}
+a.sidebar-link{
+    font: normal 14px IRANSans;
+}
+#sidebar.collapsed{
+    margin-right: -264px;
+}
+.btn i{
+    color: #333;
+    
+}
+
+li{list-style: none;}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #eee;
+}
+.sidebar-logo{
+    padding: 1.15rem 1.5rem;
+}
+.sidebar-logo a{
+    color: #e9e9e9;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.sidebar-nav{
+    padding: 0;
+}
+.sidebar-header{
+    color: #e9e9e9;
+    font-size: 0.75rem;
+    padding: 1.5rem 1.5rem 0.375rem;
+}
+a.sidebar-link{
+    padding: 0.625rem 1.625rem;
+    color: #e9e9e9;
+    position: relative;
+    display: block;
+    font-size: 1rem ;
+    text-decoration: none;
+}
+.sidebar-link[data-bs-toggle="collapse"]::after{
+    border:solid;
+    border-width: 0 0.075rem 0.075rem 0;
+    content: 0;
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    left:1.5rem;
+    top:1.4rem;
+    transform: rotate(-135deg);
+    transition: all 0.2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after{
+    transform: rotate(45deg);
+    transition: all 0.2s ease-out;
+}
+
+table.pxtorem{
+    width: 150px;
+    flex-direction: row;
+}
+.bd-example-row [class^="col"], .bd-example-cols [class^="col"]>*, .bd-example-cssgrid [class*="grid"]>* {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color:#ccc;
+    border: 1px solid blue;
+}
+.sidebar-dropdown{
+    background-color: #020291;
+}
+.sidebar-dropdown li a{
+    font-size: 0.875rem;
+    padding-right: 3.25rem;
+}
+.table tr{
+    border-bottom: solid 1px #ccc;
+}
+
+@media (min-width:768px){
+    .content{
+        width: auto;
+    }
+    #sidebar.collapsed{
+        margin-right: -264px;
+    }
+
+}

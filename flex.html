@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/solid.css"><!--add fonts fontawesome-->
+</head>
+
+<body>
+    
+     <div class="wrapper"> 
+        
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">MyCode</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">Tools and Components</li>
+                    <li class="sidebar-item">
+                        <a href="bootstrap-rtl.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            بوت استرپ rtl
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="fontawsome.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            font-awsome
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="pxtorem.html" class="sidebar-link " > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            تبدیل px به rem
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="bootstrap-icon.html" class="sidebar-link " >
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            آيكن بوت استرپ
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="header.html" class="sidebar-link " >
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            هدر
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            اندازه ها
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                            
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link ">تبدیل px به rem</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class="fa-solid fa-sliders ps-2"></i>
+                            dashboard
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                        </a>
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main ">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn-sidebar" type="button" data-bs-theme="dark">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <section class=" p-5 justify-content-end">
+                <table class="table " style="direction: ltr;">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                            .container{display:flex}    <b style="color: blue;">>>>   d-flex | d-inline-flex | d-sm,md,..-flex</b><br>
+                            .container{flex-wrap: wrap | nowrap | reverse | wrap-reverse}<b style="color: blue;">>>> flex-wrap | flex-nowrap | flex-wrap-reverse</b><br> 
+                            .container{flex-direction: column | row;}    <b style="color: blue;">>>> flex-row | flex-column | flex-row-reverse | flex-column-reverse | flex-sm,md,xs,...-row  </b>  <br>
+                            .container{flex-flow: flex-wrap | flex-direction}<br><br><br>
+
+                            <b>ترازبندي افقي</b>
+                            <br>
+                            .container{justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly}
+                            <b style="color: blue;">>>> justify-content-between | justify-content-around | justify-content-evenly | justify-content-start | justify-content-end | justify-content-sm,md,..-between</b> 
+                            <br> <br> <br>
+                            <b>ترازبندي عمودي</b>
+                            <br>
+                            .container{align-item: flex-start | flex-end | center | stretch | baseline}
+                            <b style="color: blue;">>>> align-item-start | align-item-end | align-item-center | align-item-stretch | align-item-baseline | align-item-sm,md,..-start</b> 
+                            <br> <br> <br>
+                            <b>ترازبندي كلي</b>
+                            <br>
+                            .container{align-content: flex-start | flex-end | center | stretch | space-between | space-around | space-evenly}
+                            <b style="color: blue;">>>> align-content-start | align-content-end | align-content-center | align-content-stretch | align-content-between | align-content-around | align-content-evenly | align-content-sm,md,..-start</b> 
+                            <br> <br> <br>
+                            <b>ترازبندي يك المان به تنهايي</b>
+                            <br>
+                            .item{ align-self: start | end | center | baseline | stretch } <b style="color: blue;">>>>
+                            align-self-start | align-self-end | align-self-center | align-self-baseline | align-self-stretch | align-self-sm,md,..-start</b> 
+                            <br><br><br>
+                          </tr>
+                      <tr>
+                        <td>
+                            <b>order:</b>
+<br><br>
+order: -n ... 0 ... +n
+<b style="color: blue;">>>>
+    order-1 | order-2 | order-sm,md,...-1
+
+    </b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <br><br>
+                            <b>flex-grow</b>
+                            <br><br>
+                            .item1{flex-grow:1}<br>
+                            .item2{flex-grow:2}<br>
+                             نسبت 2 به 1  فضاي خالي را پر ميكند <<< بقيه المانها عرض دارند <br>
+                             نسبت 2 به 1  خود المان عرض ميگيرد <<< بقيه المانها عرض ندارند 
+                             <br>
+                             <b style="color: blue;">>>> flex-sm,md,...-grow-0 | flex-sm,md,...-grow-1 </b> <br>
+                             <b style="color: blue;">>>> flex-sm,md,...-shrink-0 | flex-sm,md,...-shrink-1 </b>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <br><br>
+                            <b>flex-basis</b>
+                            <br><br>
+                            1 - max-width</br>
+                            2 - flex-basis</br>
+                            3 - width , min-width</br>
+                            در فضاي خالي بصورت هوشمند المانها را كوچك ميكند تا جا شوند.
+                        </td>
+                      </tr>
+                        <tr>
+                            <td>
+                                <br><br>
+                                <b>flex</b>
+                                <br><br>
+                               flex : flex-grow flex-shrink flex-basis;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="direction: rtl;text-align: left;">
+                                <br><br>
+                                <b>كش آمدن كل المانها</b>
+                                <br><br>
+                               دادن كلاس flex-fill به تك تك آيتمها
+
+                               <b style="color: blue;">>>> flex-sm,md,...-fill </b>
+                            </td>
+                          </tr>
+                     
+                    </tbody>
+                  </table>
+
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

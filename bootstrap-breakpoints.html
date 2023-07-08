@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+    <link rel="stylesheet" href="fonts/solid.css"><!--add fonts fontawesome-->
+</head>
+
+<body>
+    
+     <div class="wrapper"> 
+        
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="index.html">MyCode</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">Tools and Components</li>
+                    <li class="sidebar-item">
+                        <a href="bootstrap-rtl.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            بوت استرپ rtl
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="bootstrap-breakpoints.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            بوت استرپ breakpoints
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="fontawsome.html" class="sidebar-link" > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            font-awsome
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="pxtorem.html" class="sidebar-link " > 
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            تبدیل px به rem
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="bootstrap-icon.html" class="sidebar-link " >
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            آيكن بوت استرپ
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="header.html" class="sidebar-link " >
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            هدر
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            
+                            <i class="fa-regular fa-file-lines ps-2"></i>
+                            اندازه ها
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                            
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link ">تبدیل px به rem</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class="fa-solid fa-sliders ps-2"></i>
+                            dashboard
+                            <i class="fa-solid fa-angle-down ps-2 "></i>
+                        </a>
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link">Analytics</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main ">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn-sidebar" type="button" data-bs-theme="dark">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <section class=" p-5 justify-content-end">
+                <table class="table ">
+                     <tbody>
+                       
+                        <tr>
+                            <td >
+                                <pre>
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+</pre>
+                            </td>
+                          </tr>
+                      
+                          <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                       </tr>
+                        <tr>
+                            <td>
+                                <pre>
+ // `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+                                </pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                  </table>
+
+            </section>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
