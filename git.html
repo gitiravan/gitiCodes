@@ -176,6 +176,7 @@
                         <p  style="background-color: #ccc;">vim</p>
                         <p>
                             در محيط vim با i تايپ ميكنيم (insert) با wq: write & quit و با q: يعني quit خارج شو.
+                            قبل خروج esc را ميزنيم.
                         </p>
                         <p  style="background-color: #ccc;">مدييت فايلها در گيت</p>
                         <p>
@@ -195,9 +196,22 @@
                         <pre>
                             git status
                             git add index.html
-                            git add.
+                            git add .
                             git commit -m "commitName"
                             git commit -a -m "commitName"
+
+                            //amend = Edit last commit
+                            git add fileName
+                            git commit --amend
+                            edit name and :wq
+                        </pre>
+                        <p  style="background-color: #ccc;"> تاريخچه كارها در گيت</p>
+                        <pre>
+                            git log
+                            git log --oneline
+                            git log index.html
+                            git log --oneline index.html
+                            
                         </pre>
                     </td>
                 </tr>
